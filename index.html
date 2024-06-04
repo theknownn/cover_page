@@ -6,11 +6,11 @@
     <title>Cover page</title>
     <style>
         body{
+            background-image: url(img/bg.jpg);
             margin: 0;
             padding: 0;
             max-height: fit-content;
             font-family: 'Times New Roman', Times, serif;
-            background-color: #c1c9b5;
         }
 
         .main{
@@ -19,9 +19,7 @@
         }
 
         header{
-            background-color: #c1c9b5;
-
-            color: #fff;
+            color: greenyellow;
             padding: 10px;
             text-align: center;
             display: flex;
@@ -53,7 +51,7 @@
         }
 
         .website-name {
-            color:  #fa0064;
+            color: rgb(255, 42, 0);
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             font-size: 3em;
@@ -62,11 +60,9 @@
         }
 
         .quotes-container1 {
-            border-radius: 20px;
-            background-color: #ffffff;
+            border-radius: 10px;
             max-width: 100%;
             padding: 10px;
-            border: 2px solid #6e6c6c;
             box-shadow: 0 0 8px rgba(o, o, o, o.2), o o o 2px white inset;
             text-align: justify;
             max-width: 100%;
@@ -87,20 +83,43 @@
             margin:auto;
             animation: slideUp 2s ease forwards;
         }
+        .search-section {/* Background color for the search section */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+        .search-section input[type="text"] {
+  padding: 10px;
+  font-size: 15px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.search-section button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  background:rgb(87, 167, 87);
+}
 
         .scroll-container {
-            border-radius: 20px;
+            border-radius: 10px;
             margin-top: 20px;
             margin-left: 20px;
             margin-bottom: 30px;
             margin-right: 20px;
-            border: 2px solid #6e6c6c;
             box-shadow: 0 0 10px rgba(o, o, o, o.2), o o o 2px white inset;
             display: flex;
             flex-direction: row;
             align-items: center;
             max-height: 60vh;
-            background-color: #ffffff;
+
             overflow:auto;
             white-space: nowrap;
             padding: 10px;
@@ -110,7 +129,7 @@
             display:block;
             padding: 10px;
             max-width: 95%;
-            height: 300px;
+            height: 290px;
         }
 
         .know-more {
@@ -143,12 +162,9 @@
         }
 
         .quotes-container2 {
-            border-radius: 20px;
-            background-color: #ffffff;
+            border-radius: 10px;
             max-width: 100%;
             padding: 10px;
-            border: 2px solid #6e6c6c;
-            box-shadow: 0 0 8px rgba(o, o, o, o.2), o o o 2px white inset;
             text-align: justify;
             max-width: 100%;
             margin-top:10px;
@@ -176,9 +192,14 @@
         <div class="cover-page">
             <div class="quotes-container1">
                 <div class="quotes">
-                    <p class="quote" style="color: red;">"FOOD, IN THE END, IN OUR OWN TRADITION, IS SOMETHING HOLY. IT'S NOT ABOUT NUTRIENTS AND CALORIES. IT'S ABOUT SHARING. IT'S ABOUT HONESTY. IT'S ABOUT IDENTITY."</p>
+                    <p class="quote" style="color: greenyellow;">"FOOD, IN THE END, IN OUR OWN TRADITION, IS SOMETHING HOLY. IT'S NOT ABOUT NUTRIENTS AND CALORIES. IT'S ABOUT SHARING. IT'S ABOUT HONESTY. IT'S ABOUT IDENTITY."</p>
 
                 </div>
+            </div>
+
+            <div class="search-section">
+                <input type="text" id="search-input" placeholder="Search for recipes...">
+                <button id="search-button">Search</button>
             </div>
         <div class="scroll-container">
             <img src="img/recipe1.jpg" alt="R1">
@@ -202,7 +223,7 @@
 
         <div class="quotes-container2">
             <div class="quotes">
-                <p class="quote" style="color: #ffd900;">"FOOD IS NOT RATIONAL. FOOD IS CULTURE, HABIT, CRAVING AND IDENTITY."</p>
+                <p class="quote" style="color: greenyellow;">"FOOD IS NOT RATIONAL. FOOD IS CULTURE, HABIT, CRAVING AND IDENTITY."</p>
 
             </div>
         </div>
